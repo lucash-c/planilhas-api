@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  meu-servico:
+    build:
+      context: .         # Diretório onde está o Dockerfile
+      dockerfile: Dockerfile
+    ports:
+      - "80:3000"        # Mapeia a porta 3000 do container para a 80 do host
+    container_name: minha-api
+    
